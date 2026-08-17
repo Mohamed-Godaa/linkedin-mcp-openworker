@@ -1,0 +1,31 @@
+{
+  "name": "linkedin-mcp-openworker",
+  "version": "0.1.1",
+  "description": "A local-first LinkedIn MCP server for OpenWorker.",
+  "type": "module",
+  "bin": {
+    "linkedin-mcp-openworker": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "openworker.mcp.example.json"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.0.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}
