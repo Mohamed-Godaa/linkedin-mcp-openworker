@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "linkedin": {
+      "command": "node",
+      "args": [
+        "linkedin-mcp-openworker"
+      ],
+      "env": {
+        "LINKEDIN_CLIENT_ID": "paste-your-linkedin-client-id-here",
+        "LINKEDIN_CLIENT_SECRET": "paste-your-linkedin-client-secret-here",
+        "LINKEDIN_REDIRECT_URI": "http://127.0.0.1:33333/linkedin/oauth/callback",
+        "LINKEDIN_VERSION": "202607"
+      }
+    }
+  }
+}

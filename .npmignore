@@ -1,0 +1,6 @@
+src/
+tsconfig.json
+.gitignore
+.github/
+*.md
+!README.md
